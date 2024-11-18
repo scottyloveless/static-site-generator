@@ -1,7 +1,9 @@
-from leafnode import LeafNode
+from textnode import TextNode, TextType
 
 
 def main():
-    example = LeafNode("a", "This this some text.", None, {"href" : "https://google.com"})
-    print(example)
+    node = TextNode("This is a text node", TextType.BOLD, "https://www.boot.dev")
+    print(node)
+
+
 main()
