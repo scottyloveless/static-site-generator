@@ -1,9 +1,9 @@
-from textnode import TextNode, TextType
-
+from markdown_to_blocks import block_to_block_type
 
 def main():
-    node = TextNode("This is a text node", TextType.BOLD, "https://www.boot.dev")
-    print(node)
-
-
+    block = """1. Test
+    2. Ordered
+    3. List"""
+    block_to_block_type(block)
+    
 main()
