@@ -1,9 +1,6 @@
-from markdown_to_blocks import block_to_block_type
+from copy_contents import copy_static_to_public
 
 def main():
-    block = """1. Test
-    2. Ordered
-    3. List"""
-    block_to_block_type(block)
+    copy_static_to_public()
     
 main()
