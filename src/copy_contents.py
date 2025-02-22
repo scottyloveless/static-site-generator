@@ -4,9 +4,7 @@ def copy_static_to_public(current_path="static", destination="public"):
     if current_path == "static":
         if os.path.exists("public"):
             shutil.rmtree("public")
-            print("public removed")
             os.mkdir("public")
-            print("public created")
     
     dir_list = os.listdir(current_path)
     #base case == if node is file and not folder
