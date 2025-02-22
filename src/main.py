@@ -1,8 +1,5 @@
-from generate_page import make_page
-from copy_contents import copy_static_to_public
+from generate_page import generate_pages_recursive
 
 def main():
-    copy_static_to_public()
-    make_page("content/index.md", "template.html", "static/index.html")
-    copy_static_to_public()
+    generate_pages_recursive()
 main()
