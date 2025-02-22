@@ -44,12 +44,12 @@ def extract_title(markdown):
             raise Exception("h1 header not found")
 
 def generate_pages_recursive(dir_path_content="content", template_path="template.html", dest_dir_path="static"):
-    if dest_dir_path == "static":
-        if os.path.exists("static"):
-            shutil.rmtree("static")
-            print("static removed")
-            os.mkdir("static")
-            print("static created")
+    #if dest_dir_path == "static":
+    #    if os.path.exists("static"):
+    #        shutil.rmtree("static")
+    #        print("static removed")
+    #        os.mkdir("static")
+    #        print("static created")
     #crawl every entry in content/
     dir_list = os.listdir(dir_path_content)
 
